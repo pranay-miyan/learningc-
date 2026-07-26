@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: Build all",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++20",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${workspaceFolder}/*.cpp",
+                "-o",
+                "${workspaceFolder}/build/main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}   
